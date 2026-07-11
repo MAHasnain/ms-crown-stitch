@@ -14,23 +14,22 @@ const portfolioItems = [
 export default function PortfolioPreview() {
 
     const [hoveredLink, setHoveredLink] = useState<string | null>(null);
-    
+
     return (
-        <section style={{ padding: "5rem 4rem" }}>
+        <section className="px-6 md:px-10 lg:px-16" style={{ paddingTop: "5rem", paddingBottom: "5rem" }}>
 
             {/* Header */}
             <div
+                className="flex flex-wrap items-end justify-between"
                 style={{
-                    display: "flex",
-                    alignItems: "flex-end",
-                    justifyContent: "space-between",
                     marginBottom: "2.5rem",
+                    gap: "1rem",
                 }}
             >
                 <h2
                     style={{
                         fontFamily: "'Playfair Display', serif",
-                        fontSize: "2.6rem",
+                        fontSize: "clamp(1.9rem, 5vw, 2.6rem)",
                         fontWeight: 400,
                         color: "var(--white)",
                     }}
@@ -47,6 +46,7 @@ export default function PortfolioPreview() {
                         letterSpacing: "0.15em",
                         color: "var(--gold)",
                         textDecoration: "none",
+                        whiteSpace: "nowrap",
                     }}
                 >
                     View All
@@ -63,17 +63,16 @@ export default function PortfolioPreview() {
 
             {/* Grid */}
             <div
+                className="grid grid-cols-2 sm:grid-cols-3"
                 style={{
-                    display: "grid",
-                    gridTemplateColumns: "repeat(3, 1fr)",
                     gap: "2px",
                 }}
             >
                 {portfolioItems.map((item) => (
                     <div
                         key={item.label}
+                        className={item.large ? "col-span-2 sm:col-span-2" : "col-span-1"}
                         style={{
-                            gridColumn: item.large ? "span 2" : "span 1",
                             aspectRatio: item.large ? "2/1" : "1/1",
                             position: "relative",
                             overflow: "hidden",

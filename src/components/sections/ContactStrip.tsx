@@ -13,13 +13,11 @@ export default function ContactStrip() {
 
     return (
         <section
+            className="flex flex-col md:flex-row md:items-center md:justify-between mx-6 md:mx-10 lg:mx-16"
             style={{
-                margin: "2rem 4rem",
-                padding: "3rem",
+                padding: "2.5rem",
                 border: "0.5px solid rgba(201,168,76,0.2)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
+                gap: "1.75rem",
                 background: "rgba(201,168,76,0.03)",
             }}
         >
@@ -28,7 +26,7 @@ export default function ContactStrip() {
                 <h3
                     style={{
                         fontFamily: "'Playfair Display', serif",
-                        fontSize: "1.9rem",
+                        fontSize: "clamp(1.5rem, 4vw, 1.9rem)",
                         fontWeight: 400,
                         color: "var(--white)",
                         marginBottom: "0.4rem",
@@ -49,7 +47,7 @@ export default function ContactStrip() {
             </div>
 
             {/* Actions */}
-            <div style={{ display: "flex", gap: "1rem" }}>
+            <div className="flex flex-wrap" style={{ gap: "1rem" }}>
 
                 {/* WhatsApp Button */}
                 <a
@@ -71,6 +69,7 @@ export default function ContactStrip() {
                         letterSpacing: "0.15em",
                         textDecoration: "none",
                         transition: "all 0.35s ease",
+                        whiteSpace: "nowrap",
                     }}
                 >
                     <svg
@@ -106,6 +105,7 @@ export default function ContactStrip() {
                         letterSpacing: "0.15em",
                         textDecoration: "none",
                         transition: "all 0.35s ease",
+                        whiteSpace: "nowrap",
                     }}
                 >
                     Contact Us

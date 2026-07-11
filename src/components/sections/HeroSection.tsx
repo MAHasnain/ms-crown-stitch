@@ -45,17 +45,17 @@ export default function HeroSection() {
             />
 
             <div
+                className="px-6 md:px-10 lg:px-16"
                 style={{
                     position: "relative",
                     zIndex: 2,
-                    padding: "0 4rem",
                     maxWidth: "680px",
                 }}
             >
                 <div
                     style={{
                         fontFamily: "'Cinzel', serif",
-                        fontSize: "14px",
+                        fontSize: "clamp(11px, 2.5vw, 14px)",
                         letterSpacing: "0.3em",
                         color: "var(--gold)",
                         marginBottom: "1.5rem",
@@ -79,7 +79,7 @@ export default function HeroSection() {
                 <h1
                     style={{
                         fontFamily: "'Playfair Display', serif",
-                        fontSize: "5.5rem",
+                        fontSize: "clamp(2.4rem, 8vw, 5.5rem)",
                         fontWeight: 400,
                         lineHeight: 1.05,
                         letterSpacing: "0.01em",
@@ -112,7 +112,7 @@ export default function HeroSection() {
                 </p>
 
                 {/* CTAs */}
-                <div style={{ display: "flex", alignItems: "center", gap: "2rem" }}>
+                <div className="flex flex-wrap items-center" style={{ gap: "1.5rem" }}>
 
                     <a
                         href="/portfolio"
@@ -128,6 +128,7 @@ export default function HeroSection() {
                             padding: "0.65rem 1.5rem",
                             textDecoration: "none",
                             transition: "all 0.35s ease",
+                            whiteSpace: "nowrap",
                         }}
                     >
                         View Our Work
@@ -140,12 +141,13 @@ export default function HeroSection() {
                             fontFamily: "'Cinzel', serif",
                             fontSize: "13px",
                             letterSpacing: "0.15em",
-                            color: hoveredLink === "services" ? "var(--gold)" : "var(--white)" ,
+                            color: hoveredLink === "services" ? "var(--gold)" : "var(--white)",
                             transition: "color 0.3s",
                             textDecoration: "none",
                             display: "flex",
                             alignItems: "center",
                             gap: "0.5rem",
+                            whiteSpace: "nowrap",
                         }}
                     >
                         Our Services

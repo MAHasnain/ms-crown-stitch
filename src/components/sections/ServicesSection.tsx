@@ -29,7 +29,7 @@ export default function ServicesSection() {
     const [hoveredCard, setHoveredCard] = useState<string | null>(null);
 
     return (
-        <section style={{ padding: "5rem 4rem" }}>
+        <section className="px-6 md:px-10 lg:px-16" style={{ paddingTop: "5rem", paddingBottom: "5rem" }}>
 
             {/* Thread Divider */}
             <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "4rem" }}>
@@ -54,7 +54,7 @@ export default function ServicesSection() {
             </div>
 
             {/* Grid */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+            <div className="grid grid-cols-1 sm:grid-cols-2">
                 {services.map((service) => {
                     const isHovered = hoveredCard === service.roman;
                     return (
@@ -63,7 +63,7 @@ export default function ServicesSection() {
                             onMouseEnter={() => setHoveredCard(service.roman)}
                             onMouseLeave={() => setHoveredCard(null)}
                             style={{
-                                padding: "2.5rem",
+                                padding: "2rem",
                                 border: "0.5px solid rgba(201,168,76,0.15)",
                                 background: isHovered ? "rgba(201,168,76,0.03)" : "transparent",
                                 borderColor: isHovered ? "rgba(201,168,76,0.4)" : "rgba(201,168,76,0.15)",
@@ -83,7 +83,7 @@ export default function ServicesSection() {
 
                             <h3 style={{
                                 fontFamily: "'Playfair Display', serif",
-                                fontSize: "1.45rem",
+                                fontSize: "1.35rem",
                                 fontWeight: 400,
                                 color: "var(--white)",
                                 marginBottom: "0.75rem",

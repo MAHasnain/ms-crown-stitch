@@ -13,14 +13,12 @@ const navLinks = [
 export default function Navbar() {
   const [hoveredLink, setHoveredLink] = useState<string | null>(null);
   const [ctaHovered, setCtaHovered] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav
+      className="flex items-center justify-between px-6 py-5 md:px-10 lg:px-16"
       style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        padding: "1.5rem 4rem",
         borderBottom: "0.5px solid rgba(201,168,76,0.2)",
         position: "sticky",
         top: 0,
@@ -32,6 +30,7 @@ export default function Navbar() {
       {/* Logo */}
       <Link
         href="/"
+        onClick={() => setMenuOpen(false)}
         style={{
           fontFamily: "'Cinzel', serif",
           fontSize: "1.1rem",
@@ -45,8 +44,8 @@ export default function Navbar() {
         MS Crown Stitch
       </Link>
 
-      {/* Nav Links */}
-      <ul style={{ display: "flex", gap: "2.5rem", listStyle: "none" }}>
+      {/* Desktop Nav Links */}
+      <ul className="hidden md:flex" style={{ gap: "2.5rem", listStyle: "none" }}>
         {navLinks.map((item) => (
           <li key={item.href} style={{ position: "relative" }}>
             <Link
@@ -65,7 +64,6 @@ export default function Navbar() {
               }}
             >
               {item.label}
-              {/* Underline slide-in effect */}
               <span
                 style={{
                   display: "block",
@@ -82,11 +80,12 @@ export default function Navbar() {
         ))}
       </ul>
 
-      {/* CTA */}
+      {/* Desktop CTA */}
       <Link
         href="/contact"
         onMouseEnter={() => setCtaHovered(true)}
         onMouseLeave={() => setCtaHovered(false)}
+        className="hidden md:inline-block"
         style={{
           fontFamily: "'Cinzel', serif",
           fontSize: "12px",
@@ -101,6 +100,97 @@ export default function Navbar() {
       >
         Get a Quote
       </Link>
+
+      {/* Mobile Hamburger Button */}
+      <button
+        aria-label="Toggle menu"
+        onClick={() => setMenuOpen((v) => !v)}
+        className="md:hidden flex flex-col justify-center items-center gap-1.5 p-2"
+        style={{ background: "transparent", border: "none", cursor: "pointer" }}
+      >
+        <span
+          style={{
+            display: "block",
+            width: "22px",
+            height: "1px",
+            background: "var(--gold)",
+            transition: "transform 0.3s ease",
+            transform: menuOpen ? "rotate(45deg) translate(4px, 4px)" : "none",
+          }}
+        />
+        <span
+          style={{
+            display: "block",
+            width: "22px",
+            height: "1px",
+            background: "var(--gold)",
+            opacity: menuOpen ? 0 : 1,
+            transition: "opacity 0.2s ease",
+          }}
+        />
+        <span
+          style={{
+            display: "block",
+            width: "22px",
+            height: "1px",
+            background: "var(--gold)",
+            transition: "transform 0.3s ease",
+            transform: menuOpen ? "rotate(-45deg) translate(4px, -4px)" : "none",
+          }}
+        />
+      </button>
+
+      {/* Mobile Dropdown Menu */}
+      {menuOpen && (
+        <div
+          className="md:hidden flex flex-col"
+          style={{
+            position: "absolute",
+            top: "100%",
+            left: 0,
+            right: 0,
+            background: "rgba(10,10,10,0.98)",
+            borderBottom: "0.5px solid rgba(201,168,76,0.2)",
+            padding: "1.5rem 1.5rem 2rem",
+            gap: "1.5rem",
+          }}
+        >
+          {navLinks.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={() => setMenuOpen(false)}
+              style={{
+                fontFamily: "'Cinzel', serif",
+                fontSize: "13px",
+                letterSpacing: "0.18em",
+                color: "var(--muted)",
+                textDecoration: "none",
+              }}
+            >
+              {item.label}
+            </Link>
+          ))}
+          <Link
+            href="/contact"
+            onClick={() => setMenuOpen(false)}
+            style={{
+              fontFamily: "'Cinzel', serif",
+              fontSize: "12px",
+              letterSpacing: "0.15em",
+              color: "var(--black)",
+              background: "var(--gold)",
+              border: "0.5px solid var(--gold)",
+              padding: "0.75rem 1.5rem",
+              textDecoration: "none",
+              textAlign: "center",
+              marginTop: "0.5rem",
+            }}
+          >
+            Get a Quote
+          </Link>
+        </div>
+      )}
     </nav>
   );
 }

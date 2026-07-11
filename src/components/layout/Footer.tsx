@@ -10,13 +10,13 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <footer
+      className="flex flex-col md:flex-row md:items-center md:justify-between px-6 md:px-10 lg:px-16"
       style={{
-        padding: "2.5rem 4rem",
+        padding: "2.5rem 1.5rem",
         borderTop: "0.5px solid rgba(201,168,76,0.15)",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
+        gap: "1.5rem",
         marginTop: "3rem",
+        textAlign: "center",
       }}
     >
       {/* Logo */}
@@ -33,7 +33,7 @@ export default function Footer() {
       </span>
 
       {/* Footer Links */}
-      <ul style={{ display: "flex", gap: "2rem", listStyle: "none" }}>
+      <ul className="flex flex-wrap justify-center" style={{ gap: "2rem", listStyle: "none" }}>
         {[
           { label: "Services", href: "/services" },
           { label: "Portfolio", href: "/portfolio" },
