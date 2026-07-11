@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -41,7 +42,7 @@ export default function Navbar() {
           transition: "opacity 0.3s",
         }}
       >
-        MS Crown Stitch
+        <Image src="/images/ms-cs-gold-logo.png" alt="MS Crown Stitch Logo" width={140} height={50} />
       </Link>
 
       {/* Desktop Nav Links */}
