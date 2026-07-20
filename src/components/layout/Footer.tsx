@@ -19,17 +19,18 @@ export default function Footer() {
         textAlign: "center",
       }}
     >
-      {/* Logo */}
       <span
         style={{
           fontFamily: "'Cinzel', serif",
-          fontSize: "0.9rem",
-          fontWeight: 500,
-          letterSpacing: "0.2em",
-          color: "var(--gold)",
+          fontSize: "12px",
+          color: "var(--muted)",
+          letterSpacing: "0.1em",
         }}
       >
-        MS Crown Stitch
+        Developed by 
+        <Link href="https://linktr.ee/MAHasnain" className="text-var(--muted) hover:text-var(--gold) transition-colors duration-300 text-sm" style={{ marginLeft: "0.25rem" }}>
+          M.A.Hasnain
+        </Link>
       </span>
 
       {/* Footer Links */}
