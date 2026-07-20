@@ -5,10 +5,11 @@ import Link from "next/link";
 import { useState } from "react";
 
 const portfolioItems = [
-    { src: "/images/portfolio-1.jpg", label: "Brand Label", large: true },
-    { src: "/images/portfolio-2.jpg", label: "Custom Patch", large: false },
-    { src: "/images/portfolio-3.jpg", label: "Detail Work", large: false },
-    { src: "/images/portfolio-4.jpg", label: "Woven Label", large: false },
+    { src: "/images/Machine sun palm.jpeg", label: "Brand Label", large: true },
+    { src: "/images/t1.jpg.jpeg", label: "Custom Patch", large: false },
+    { src: "/images/minnie-tee.jpeg", label: "Detail Work", large: false },
+    { src: "/images/machine-bunny.jpeg", label: "Woven Label", large: false },
+    { src: "/images/floral-bunny.jpeg", label: "Character Design", large: false },
 ];
 
 export default function PortfolioPreview() {

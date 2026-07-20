@@ -6,9 +6,9 @@ export default function HeroSection() {
     const [hoveredLink, setHoveredLink] = useState<string | null>(null);
     const [ctaHovered, setCtaHovered] = useState(false);
     return (
-        <section
+         <section
+            className="min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]"
             style={{
-                minHeight: "90vh",
                 position: "relative",
                 display: "flex",
                 alignItems: "center",
@@ -21,17 +21,16 @@ export default function HeroSection() {
                 muted
                 loop
                 playsInline
+                className="w-full h-full"
                 style={{
                     position: "absolute",
                     inset: 0,
-                    width: "100%",
-                    height: "100%",
                     objectFit: "cover",
                     zIndex: 0,
                     filter: "brightness(0.35)",
                 }}
             >
-                <source src="https://player.cloudinary.com/embed/?cloud_name=dkqip1ihc&public_id=Untitled_design_yl5u0t" type="video/mp4" />
+                <source src="https://res.cloudinary.com/dkqip1ihc/video/upload/v1782729283/Untitled_design_yl5u0t.mp4" type="video/mp4" />
             </video>
 
             <div
@@ -79,20 +78,20 @@ export default function HeroSection() {
                 <h1
                     style={{
                         fontFamily: "'Playfair Display', serif",
-                        fontSize: "clamp(2.4rem, 8vw, 5.5rem)",
+                        fontSize: "clamp(2.4rem, 8vw, 5rem)",
                         fontWeight: 400,
                         lineHeight: 1.05,
                         letterSpacing: "0.01em",
                         marginBottom: "1.5rem",
                     }}
                 >
-                    Crafted with
+                    Custom embroidery,
                     <br />
                     <em style={{ fontStyle: "italic", color: "var(--gold)" }}>
-                        precision,
+                        made and manufactured
                     </em>
                     <br />
-                    stitched to last
+                    right
                 </h1>
 
                 {/* Subtitle */}
@@ -101,21 +100,22 @@ export default function HeroSection() {
                         fontSize: "13px",
                         color: "var(--muted)",
                         lineHeight: 1.9,
-                        maxWidth: "420px",
+                        maxWidth: "460px",
                         marginBottom: "2.5rem",
                         fontWeight: 300,
                         letterSpacing: "0.02em",
                     }}
                 >
-                    Premium embroidered labels and custom digitizing for brands that
-                    demand quality. Every stitch a statement.
+                    From a single logo to thousands of finished pieces — we design,
+                    digitize, and produce every order in-house, so you&apos;re never
+                    juggling multiple vendors.
                 </p>
 
                 {/* CTAs */}
                 <div className="flex flex-wrap items-center" style={{ gap: "1.5rem" }}>
 
                     <a
-                        href="/portfolio"
+                        href="/contact"
                         onMouseEnter={() => setCtaHovered(true)}
                         onMouseLeave={() => setCtaHovered(false)}
                         style={{
@@ -131,17 +131,17 @@ export default function HeroSection() {
                             whiteSpace: "nowrap",
                         }}
                     >
-                        View Our Work
+                        Get a Quote
                     </a>
                     <a
-                        href="/services"
-                        onMouseEnter={() => setHoveredLink("services")}
+                        href="/portfolio"
+                        onMouseEnter={() => setHoveredLink("portfolio")}
                         onMouseLeave={() => setHoveredLink(null)}
                         style={{
                             fontFamily: "'Cinzel', serif",
                             fontSize: "13px",
                             letterSpacing: "0.15em",
-                            color: hoveredLink === "services" ? "var(--gold)" : "var(--white)",
+                            color: hoveredLink === "portfolio" ? "var(--gold)" : "var(--white)",
                             transition: "color 0.3s",
                             textDecoration: "none",
                             display: "flex",
@@ -150,11 +150,11 @@ export default function HeroSection() {
                             whiteSpace: "nowrap",
                         }}
                     >
-                        Our Services
+                        See Our Work
                         <span style={{
                             display: "inline-block",
                             marginLeft: "0.5rem",
-                            transform: hoveredLink === "services" ? "translateX(6px)" : "translateX(0)",
+                            transform: hoveredLink === "portfolio" ? "translateX(6px)" : "translateX(0)",
                             transition: "transform 0.3s ease",
                         }}>
                             →
