@@ -247,7 +247,7 @@ export default function ContactPage() {
                     </p>
                     <div style={{ display: "flex", flexDirection: "column", gap: "0.8rem" }}>
                         <a
-                            href="tel:+923421738429"
+                            href="tel:+923158398778"
                             style={{
                                 fontSize: "14px",
                                 color: "var(--gold)",
@@ -255,7 +255,7 @@ export default function ContactPage() {
                                 textDecoration: "none",
                             }}
                         >
-                            📞 +92 342 1738429
+                            📞 +92 315 8398778
                         </a>
                         <a
                             href="mailto:shaheer@mscrownstitch.com"
