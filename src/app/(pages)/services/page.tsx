@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import ContactStrip from "@/components/sections/ContactStrip";
+import EmbroideryTypes from "@/components/sections/EmbroideryTypes";
 
 const services = [
   {
@@ -175,6 +176,8 @@ export default function ServicesPage() {
           })}
         </div>
       </section>
+
+      <EmbroideryTypes />
 
       <ContactStrip />
     </>

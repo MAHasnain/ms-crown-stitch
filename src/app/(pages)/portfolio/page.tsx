@@ -6,13 +6,21 @@ import ContactStrip from "@/components/sections/ContactStrip";
 
 const portfolioItems = [
     { src: "/images/Machine horse.jpeg", label: "Running Horse Embroidery" },
-    { src: "/images/Machine sun palm.jpeg", label: "Embroidery in Progress" },
     { src: "/images/Summer-sweatshirt.jpeg", label: "Summer Sweatshirt" },
     { src: "/images/minnie-tee.jpeg", label: "Character Embroidery" },
     { src: "/images/t1.jpg.jpeg", label: "Tiger Patch Tee" },
     { src: "/images/t2.jpg.jpeg", label: "Custom Graphic Tee" },
     { src: "/images/floral-bunny.jpeg", label: "Floral Bunny Detail" },
     { src: "/images/Horse tees frontback.jpeg", label: "Front & Back Design" },
+    { src: "/images/services/puff-2.jpg", label: "Puff Sleeve Detail" },
+    { src: "/images/services/puff.jpg", label: "3D Puff Detail" },
+    { src: "/images/services/horse puff.png", label: "Hoodie Puff front design" },
+    { src: "/images/services/cap-1.jpeg", label: "Cap Design" },
+    { src: "/images/services/cap-2.jpeg", label: "Cap Front Design" },
+    { src: "/images/services/cap-3.jpeg", label: "Multiple Color Design" },
+    { src: "/images/services/chenille-embroidery-1.png", label: "Chenille Embroidery" },
+    { src: "/images/services/1.jpg", label: "Embroidery in Progress" },
+    { src: "/images/services/chenille-embroidery-2.jpg", label: "Letter Chenille Embroidery" },
 ];
 
 export default function PortfolioPage() {
