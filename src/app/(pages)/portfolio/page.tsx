@@ -5,22 +5,22 @@ import { useState } from "react";
 import ContactStrip from "@/components/sections/ContactStrip";
 
 const portfolioItems = [
-    { src: "/images/Machine horse.jpeg", label: "Running Horse Embroidery" },
-    { src: "/images/Summer-sweatshirt.jpeg", label: "Summer Sweatshirt" },
-    { src: "/images/minnie-tee.jpeg", label: "Character Embroidery" },
-    { src: "/images/t1.jpg.jpeg", label: "Tiger Patch Tee" },
-    { src: "/images/t2.jpg.jpeg", label: "Custom Graphic Tee" },
-    { src: "/images/floral-bunny.jpeg", label: "Floral Bunny Detail" },
-    { src: "/images/Horse tees frontback.jpeg", label: "Front & Back Design" },
-    { src: "/images/services/puff-2.jpg", label: "Puff Sleeve Detail" },
-    { src: "/images/services/puff.jpg", label: "3D Puff Detail" },
-    { src: "/images/services/horse puff.png", label: "Hoodie Puff front design" },
-    { src: "/images/services/cap-1.jpeg", label: "Cap Design" },
-    { src: "/images/services/cap-2.jpeg", label: "Cap Front Design" },
-    { src: "/images/services/cap-3.jpeg", label: "Multiple Color Design" },
-    { src: "/images/services/chenille-embroidery-1.png", label: "Chenille Embroidery" },
-    { src: "/images/services/1.jpg", label: "Embroidery in Progress" },
-    { src: "/images/services/chenille-embroidery-2.jpg", label: "Letter Chenille Embroidery" },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980916/Machine_horse_pn5yx1.jpg", label: "Running Horse Embroidery" },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980911/Summer-sweatshirt_lh5qrs.jpg", label: "Summer Sweatshirt" },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980909/minnie-tee_edtjcl.jpg", label: "Character Embroidery" },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980910/t1.jpg_l4jcph.jpg", label: "Tiger Patch Tee" },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980910/t2.jpg_esbwbi.jpg", label: "Custom Graphic Tee" },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980915/floral-bunny_yborcy.jpg", label: "Floral Bunny Detail" },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980916/Horse_tees_frontback_c9gmnn.jpg", label: "Front & Back Design" },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980914/puff-2_lrjigm.jpg", label: "Puff Sleeve Detail" },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980915/puff_a1qazq.jpg", label: "3D Puff Detail" },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980915/horse_puff_ggditz.png", label: "Hoodie Puff front design" },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980912/cap-1_lwkz4j.jpg", label: "Cap Design" },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980912/cap-2_ruryhl.jpg", label: "Cap Front Design" },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980912/cap-3_k4u18w.jpg", label: "Multiple Color Design" },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980914/chenille-embroidery-2_dwtfu1.jpg", label: "Chenille Embroidery" },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980910/1_vfzta7.jpg", label: "Embroidery in Progress" },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980914/chenille-embroidery-2_dwtfu1.jpg", label: "Letter Chenille Embroidery" },
 ];
 
 export default function PortfolioPage() {

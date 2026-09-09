@@ -5,11 +5,11 @@ import Link from "next/link";
 import { useState } from "react";
 
 const portfolioItems = [
-    { src: "/images/Machine sun palm.jpeg", label: "Brand Label", large: true },
-    { src: "/images/t1.jpg.jpeg", label: "Custom Patch", large: false },
-    { src: "/images/minnie-tee.jpeg", label: "Detail Work", large: false },
-    { src: "/images/machine-bunny.jpeg", label: "Woven Label", large: false },
-    { src: "/images/floral-bunny.jpeg", label: "Character Design", large: false },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980916/Machine_sun_palm_eax4dj.jpg", label: "Brand Label", large: true },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980910/t1.jpg_l4jcph.jpg", label: "Custom Patch", large: false },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980909/minnie-tee_edtjcl.jpg", label: "Detail Work", large: false },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980910/machine-bunny_o59o7v.jpg", label: "Woven Label", large: false },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980915/floral-bunny_yborcy.jpg", label: "Character Design", large: false },
 ];
 
 export default function PortfolioPreview() {

@@ -5,27 +5,27 @@ import { useState } from "react";
 
 const embroideryTypes = [
   {
-    src: "/images/minnie-tee.jpeg",
+    src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980909/minnie-tee_edtjcl.jpg",
     title: "Flat Embroidery",
     desc: "The classic, clean stitch style ideal for logos, text, and everyday branding.",
   },
   {
-    src: "/images/services/chenille-embroidery.png",
+    src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980918/chenille-embroidery-1_vwt3lt.png",
     title: "Chenille Embroidery",
     desc: "Bold, textured, varsity-style stitching that stands out on jackets and caps.",
   },
   {
-    src: "/images/services/3d-puff-embroidery.jpg",
+    src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980914/3d-puff-embroidery_ei8szg.jpg",
     title: "3D Puff Embroidery",
     desc: "Raised, dimensional stitching that gives logos a bold, tactile look.",
   },
   {
-    src: "/images/services/cap-embroidery.jpeg",
+    src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980913/cap-embroidery_mbdstz.jpg",
     title: "Cap Embroidery",
     desc: "Precision stitching built for curved surfaces like caps and hats.",
   },
   {
-    src: "/images/services/10.jpg",
+    src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980911/10_mhq8ze.jpg",
     title: "Keychain Embroidery",
     desc: "Small-format embroidery for merchandise, giveaways, and accessories.",
   },
