@@ -18,7 +18,7 @@ const portfolioItems = [
     { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980912/cap-1_lwkz4j.jpg", label: "Cap Design" },
     { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980912/cap-2_ruryhl.jpg", label: "Cap Front Design" },
     { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980912/cap-3_k4u18w.jpg", label: "Multiple Color Design" },
-    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980914/chenille-embroidery-2_dwtfu1.jpg", label: "Chenille Embroidery" },
+    { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980911/10_mhq8ze.jpg", label: "Key chain Embroidery" },
     { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980910/1_vfzta7.jpg", label: "Embroidery in Progress" },
     { src: "https://res.cloudinary.com/dkqip1ihc/image/upload/v1788980914/chenille-embroidery-2_dwtfu1.jpg", label: "Letter Chenille Embroidery" },
 ];
