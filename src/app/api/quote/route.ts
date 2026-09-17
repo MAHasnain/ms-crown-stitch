@@ -28,7 +28,7 @@ export async function POST(req: Request) {
 
     await resend.emails.send({
       from: "MS Crown Stitch <quotes@mscrownstitch.com>",
-      to: ["shaheer@mscrownstitch.com", "farhan@mscrownstitch.com"], 
+      to: ["7a6337@gmail.com", "farhanaolqms@gmail.com"], 
       replyTo: email,
       subject: `New Quote Request — ${companyName || "Website Inquiry"}`,
       html: `
