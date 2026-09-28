@@ -37,7 +37,7 @@ export default function Footer() {
       <ul className="flex flex-wrap justify-center" style={{ gap: "2rem", listStyle: "none" }}>
         {[
           { label: "Services", href: "/services" },
-          { label: "Portfolio", href: "/portfolio" },
+          { label: "Our Designs", href: "/our designs" },
           { label: "Contact", href: "/contact" },
         ].map((item) => (
           <li key={item.href}>

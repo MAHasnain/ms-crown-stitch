@@ -361,7 +361,7 @@ export default function ContactPage() {
 
           <div style={{ display: "flex", gap: "1rem", marginTop: "1.75rem" }}>
             <a
-              href="#"
+              href="https://www.instagram.com/mscrownstitch/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -392,7 +392,7 @@ export default function ContactPage() {
             </a>
 
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61593667155781"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -421,7 +421,7 @@ export default function ContactPage() {
             </a>
 
             <a
-              href="#"
+              href="https://www.tiktok.com/@ms.crown.stitch?_r=1&_t=ZS-99KoTVkANeC"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="TikTok"
