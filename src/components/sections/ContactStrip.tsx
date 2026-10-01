@@ -6,7 +6,7 @@ export default function ContactStrip() {
     const [waHovered, setWaHovered] = useState(false);
     const [contactHovered, setContactHovered] = useState(false);
 
-    const whatsappNumber = "+923421738429";
+    const whatsappNumber = "+923702166552";
     const whatsappMsg = encodeURIComponent(
         "Hello! I'm interested in your embroidery services."
     );
